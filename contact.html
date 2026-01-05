@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contactez-nous</title>
+  <link rel="stylesheet" href="contact.css">
+  <link rel="icon" href="dirnex.JPG" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<style>
+  * {
+    user-select: none;
+  }
+
+  /* Style global */
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #ffffff;
+  }
+
+  /* Section principale */
+  .contact-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+  }
+
+  /* Conteneur principal */
+  .contact-container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  /* Partie info */
+  .contact-info {
+    flex: 1 1 45%;
+  }
+
+  .contact-info h2 {
+    font-size: 28px;
+    color: #f39c12;
+    margin-bottom: 15px;
+  }
+
+  .contact-info p {
+    color: #000000;
+    line-height: 1.7;
+  }
+
+  .info-box {
+    margin: 25px 0;
+  }
+
+  .info-box p {
+    margin: 10px 0;
+    font-size: 15px;
+  }
+
+  .info-box i {
+    color: #f39c12;
+    margin-right: 10px;
+  }
+
+  /* Liens sociaux */
+  .social-links a {
+    display: inline-block;
+    color: #d68910;
+    font-size: 20px;
+    margin-right: 12px;
+    transition: 0.3s;
+  }
+
+  .social-links a:hover {
+    color: #f39c12;
+    transform: translateY(-2px);
+  }
+
+  /* Formulaire */
+  .contact-form {
+    flex: 1 1 45%;
+    background-color: #bfc4ca;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  }
+
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 22px;
+    color: #f39c12;
+    text-align: center;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    background-color: #ffffff;
+    color: #fff;
+    font-size: 15px;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    border: 1px solid #f39c12;
+  }
+
+  .contact-form textarea {
+    height: 120px;
+    resize: none;
+  }
+
+  .contact-form button {
+    background-color: #f39c12;
+    color: #fff;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+  }
+
+  .contact-form button:hover {
+    background-color: #d68910;
+    transform: translateY(-2px);
+  }
+
+  /* Form groups & feedback */
+  .form-group { margin-bottom: 12px; }
+  .form-group label { display:block; font-size:14px; margin-bottom:6px; color:#ddd; }
+  .form-feedback { padding:12px; border-radius:6px; margin-bottom:12px; font-size:14px; }
+  .form-feedback.success { background:#1f2b1f; color:#b7f0b7; border:1px solid #2f7d2f; }
+  .form-feedback.error { background:#2b1f1f; color:#f0b7b7; border:1px solid #7d2f2f; }
+  .loading { display:inline-block; width:16px; height:16px; border:2px solid rgba(255,255,255,0.2); border-top-color:#fff; border-radius:50%; animation:spin 0.8s linear infinite; vertical-align:middle; margin-left:8px; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .contact-container {
+      flex-direction: column;
+    }
+
+    .contact-form,
+    .contact-info {
+      flex: 1 1 100%;
+    }
+  }
+
+  footer {
+    background-color: #0d1117;
+    color: #e0e0e0;
+    font-family: 'Poppins', sans-serif;
+    padding-top: 60px;
+  }
+
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #2a2f36;
+  }
+
+  .footer-logo {
+    width: 25%;
+    min-width: 250px;
+  }
+
+  .footer-logo h2 {
+    font-size: 28px;
+    color: #fff;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+
+  .footer-logo h2 span {
+    color: #f39c12;
+  }
+
+  .footer-logo p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #bbb;
+  }
+
+  .footer-links {
+    width: 18%;
+    min-width: 200px;
+  }
+
+  .footer-links h3 {
+    color: #fff;
+    margin-bottom: 15px;
+    font-size: 17px;
+    position: relative;
+  }
+
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  .footer-links ul li {
+    margin: 10px 0;
+  }
+
+  .footer-links ul li a {
+    text-decoration: none;
+    color: #bbb;
+    transition: all 0.3s;
+  }
+
+  .footer-links ul li a:hover {
+    color: #f39c12;
+    padding-left: 5px;
+  }
+
+  .footer-contact {
+    width: 25%;
+    min-width: 250px;
+  }
+
+  .footer-contact h3 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  .footer-contact p {
+    margin: 8px 0;
+    color: #bbb;
+    font-size: 15px;
+  }
+
+  .footer-contact i {
+    margin-right: 10px;
+    color: #f39c12;
+  }
+
+  .social-icons {
+    margin-top: 15px;
+  }
+
+  .social-icons a {
+    color: #fff;
+    margin-right: 12px;
+    font-size: 20px;
+    transition: 0.3s;
+  }
+
+  .social-icons a:hover {
+    color: #f39c12;
+    transform: translateY(-2px);
+  }
+
+  .footer-bottom {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #0b0f14;
+    font-size: 14px;
+    color: #777;
+    letter-spacing: 0.5px;
+  }
+
+  /* Responsive */
+  @media (max-width: 900px) {
+    .footer-top {
+      flex-direction: column;
+      text-align: center;
+      align-items: center;
+    }
+
+    .footer-links,
+    .footer-contact,
+    .footer-logo {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+
+    .footer-links ul li a:hover {
+      padding-left: 0;
+    }
+  }
+</style>
+
+<body>
+
+  <section class="contact-section">
+    <div class="contact-container">
+      <div class="contact-info">
+        <h2>Entrons en contact</h2>
+        <p>Vous avez un projet ou une question ? Remplissez le formulaire ci-dessous et notre équipe vous répondra dans
+          les plus brefs délais.</p>
+
+        <div class="social-links">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+
+      <div class="contact-form">
+        <h2>Envoyez-nous un message</h2>
+        <form id="contactForm" action="contact.php" method="POST" novalidate>
+          <div class="form-group">
+            <label for="nom">Nom complet</label>
+            <input id="nom" type="text" name="nom" placeholder="Votre nom complet" required autofocus>
+          </div>
+          <div class="form-group">
+            <label for="email">Adresse e‑mail</label>
+            <input id="email" type="email" name="email" placeholder="Votre adresse e-mail" required>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" placeholder="Votre message..." required></textarea>
+          </div>
+
+          <div id="form-feedback" role="status" aria-live="polite" class="form-feedback" hidden></div>
+
+          <button id="submitBtn" type="submit">Envoyer</button>
+        </form>
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="footer-top">
+      <div class="footer-logo">
+        <h2><span>D</span>irnex</h2>
+        <p>
+          Nous aidons les entreprises et les particuliers à construire une présence digitale forte,
+          avec des solutions modernes, simples et efficaces.
+        </p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Entreprise</h3>
+        <ul>
+          <li><a href="a propos.html">À propos</a></li>
+          <li><a href="services.html">Nos services</a></li>
+
+        </ul>
+      </div>
+
+      <div class="footer-links">
+        <h3>Support</h3>
+        <ul>
+          <li><a href="services client.html">Centre d’aide</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-contact">
+        <h3>Contact</h3>
+        <p><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</p>
+         <a href="tel:+243971952763"></ahref> <i class="fa-solid fa-phone"></i>  </a>
+         <a href="mailto:musjosue809@gmail.com"><i class="fa-solid fa-envelope"></i> </a>
+        <div class="social-icons">
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      (function(){
+        const form = document.getElementById('contactForm');
+        const feedback = document.getElementById('form-feedback');
+        const submitBtn = document.getElementById('submitBtn');
+
+        function showMessage(type, text){
+          feedback.className = 'form-feedback ' + (type === 'success' ? 'success' : 'error');
+          feedback.textContent = text;
+          feedback.hidden = false;
+        }
+
+        form.addEventListener('submit', async function(e){
+          e.preventDefault();
+          feedback.hidden = true;
+
+          // Validation simple côté client
+          const email = form.email.value.trim();
+          if (!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)){
+            showMessage('error', 'Veuillez saisir une adresse e-mail valide.');
+            return;
+          }
+
+          submitBtn.disabled = true;
+          const spinner = document.createElement('span'); spinner.className = 'loading'; submitBtn.appendChild(spinner);
+
+          try {
+            const data = new FormData(form);
+            const res = await fetch(form.action, {
+              method: 'POST',
+              headers: { 'Accept': 'application/json' },
+              body: data
+            });
+
+            const json = await res.json();
+            if (json && json.success){
+              showMessage('success', json.message || 'Message envoyé avec succès.');
+              form.reset();
+            } else {
+              showMessage('error', json.message || 'Erreur lors de l\'envoi.');
+            }
+          } catch (err){
+            showMessage('error', 'Erreur réseau. Veuillez réessayer.');
+          } finally {
+            submitBtn.disabled = false;
+            if (spinner && spinner.parentNode) spinner.parentNode.removeChild(spinner);
+          }
+        });
+      })();
+    </script>
+
+</body>
+
+</html>
