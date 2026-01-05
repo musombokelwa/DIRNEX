@@ -13,7 +13,10 @@ body {
   color: #ffffff;
   line-height: 1.6;
 }
-
+a{
+  text-decoration: none;
+  color: rgb(209, 127, 19);
+}
 
 .about {
   display: flex;
