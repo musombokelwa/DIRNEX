@@ -3,99 +3,139 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dirnex - À propos & Services</title>
+  <title>À propos | DIRNEX</title>
+  <meta name="description" content="Découvrez DIRNEX : une entreprise spécialisée dans la construction, la rénovation, l’électricité et la plomberie, au service des particuliers et des entreprises à Lubumbashi.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DIRNEX">
+  <meta name="canonical" content="https://dirnex.co/about.html">
+  <meta property="og:title" content="À propos | DIRNEX">
+  <meta property="og:description" content="Une entreprise locale spécialisée dans la construction, la rénovation et les services techniques.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dirnex.co/about.html">
   <link rel="icon" href="dirnex.JPG" type="image/x-icon">
+  <link rel="canonical" href="https://dirnex.co/about.html">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="about.css">
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="topbar container">
+      <a href="index.html" class="brand" aria-label="Accueil DIRNEX">
+        <img src="dirnex.JPG" alt="Logo DIRNEX">
+        <span>DIRNEX</span>
+      </a>
 
- 
+      <div class="hamburger" id="hamburger" aria-label="Ouvrir le menu" role="button" tabindex="0">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
 
-   <section class="about">
-    <img src="dirnex.JPG" alt="À propos Dirnex">
-    <div class="about-text">
-      <h2>À propos de Dirnex</h2>
-      <p>Dirnex est une entreprise spécialisée dans les services techniques, digitaux et industriels. Nous mettons notre expertise au service de nos clients pour offrir des solutions innovantes et durables.</p>
-      <p>Nos domaines couvrent le bâtiment, l’électricité, la plomberie et le numérique. Avec une équipe passionnée et expérimentée, notre objectif est de garantir la qualité, la fiabilité et la satisfaction à chaque projet.</p>
+      <nav id="menu" class="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html" class="active">À propos</a>
+        <a href="services.html">Nos services</a>
+        <a href="services client.html">Service client</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary header-cta">Demander un devis</a>
     </div>
-  </section>
+  </header>
 
-  <!-- SECTION SERVICES -->
-  <section class="services-section">
-    <h2>Nos Services</h2>
-    <div class="services-grid">
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container">
+        <span class="eyebrow">Notre identité</span>
+        <h1>Une entreprise locale, sérieuse et tournée vers la qualité.</h1>
+      </div>
+    </section>
 
-      <!-- Carte Service 1 -->
-      <div class="service-card">
-        <img src="finition.jpg" alt="Travaux de construction">
-        <div class="card-text">
-          <h3>Travaux de construction</h3>
-          <p>Dirnex assure la construction de bâtiments résidentiels et commerciaux. Nous réalisons fondations, structures, murs et finitions avec qualité et durabilité. Chaque projet est suivi de près pour respecter les délais et les normes. Nous proposons également des solutions sur mesure adaptées à vos besoins.</p>
+    <section class="content-section">
+      <div class="container about-layout">
+        <div class="about-image-block">
+          <img src="dirnex.JPG" alt="DIRNEX à propos">
+        </div>
+
+        <div class="about-text-block">
+          <span class="eyebrow accent">À propos de DIRNEX</span>
+          <h2>Nous créons des espaces durables, fonctionnels et adaptés à vos ambitions.</h2>
+          <p>DIRNEX est une structure spécialisée dans le bâtiment, la rénovation, l’électricité, la plomberie et les services techniques. Nous accompagnons nos clients dans la conception, la réalisation et le suivi de leurs projets, avec un souci constant de qualité, de sécurité et de fiabilité.</p>
+          <p>Notre approche combine expertise technique, respect des délais et écoute attentive des besoins. Chaque intervention est pensée pour offrir une solution durable, performante et adaptée au contexte réel de chaque client.</p>
+          <a href="contact.html" class="btn btn-primary">Parler à notre équipe</a>
         </div>
       </div>
+    </section>
 
-      <!-- Carte Service 2 -->
-      <div class="service-card">
-        <img src="electricite.jpg" alt="Installations électriques">
-        <div class="card-text">
-          <h3>Installations électriques</h3>
-          <p>Nous réalisons le câblage complet et l’installation électrique pour tout type de bâtiment. Nos installations respectent les normes de sécurité et les standards énergétiques modernes. Nous proposons des solutions en domotique, éclairage et maintenance préventive. L’efficacité énergétique et la durabilité sont au cœur de nos services.</p>
+    <section class="content-section alt-bg">
+      <div class="container">
+        <div class="section-title center">
+          <span class="eyebrow accent">Nos valeurs</span>
+          <h2>Des engagements clairs pour un travail de confiance.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <i class="fa-solid fa-shield-heart"></i>
+            <h3>Fiabilité</h3>
+            <p>Des interventions soignées, respect des normes et un suivi sérieux de chaque projet.</p>
+          </article>
+          <article class="service-card">
+            <i class="fa-solid fa-lightbulb"></i>
+            <h3>Innovation</h3>
+            <p>Des solutions modernes et pratiques pour améliorer la performance et la durabilité.</p>
+          </article>
+          <article class="service-card">
+            <i class="fa-solid fa-handshake"></i>
+            <h3>Confiance</h3>
+            <p>Une relation professionnelle bâtie sur l’écoute, la transparence et le respect du client.</p>
+          </article>
+          <article class="service-card">
+            <i class="fa-solid fa-clock"></i>
+            <h3>Exigence</h3>
+            <p>Un travail rigoureux, pensé pour respecter les délais et les attentes les plus strictes.</p>
+          </article>
         </div>
       </div>
+    </section>
+  </main>
 
-      <!-- Carte Service 3 -->
-      <div class="service-card">
-        <img src="plomberie.jpg" alt="Plomberie et maintenance">
-        <div class="card-text">
-          <h3>Plomberie et maintenance</h3>
-          <p>Dirnex prend en charge l’installation et l’entretien des systèmes de plomberie. Nous assurons la pose de canalisations, sanitaires et systèmes de chauffage. Nos experts interviennent rapidement pour toute maintenance ou réparation. Chaque projet est conçu pour durer et fonctionner efficacement.</p>
-        </div>
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3><span>D</span>IRNEX</h3>
+        <p>Des solutions fiables et durables pour la construction, la rénovation et les services techniques.</p>
       </div>
 
-      <!-- Carte Service 4 -->
-      <div class="service-card">
-        <img src="exteri.jpg" alt="Isolation et étanchéité">
-        <div class="card-text">
-          <h3>Isolation et étanchéité</h3>
-          <p>Nous proposons des solutions complètes pour l’isolation thermique et acoustique. Nos travaux protègent les bâtiments contre les pertes d’énergie et les infiltrations d’eau. Chaque projet est personnalisé selon le type de construction et vos besoins. Nous utilisons des matériaux durables et performants.</p>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <div class="footer-top">
-      <div class="footer-logo">
-        <h2><span>D</span>irnex</h2>
-        <p>Construire l’avenir avec expertise et innovation, au service de nos clients.</p>
-      </div>
-      <div class="footer-links">
-        <h3>Entreprise</h3>
+      <div>
+        <h4>Entreprise</h4>
         <ul>
-          <li><a href="index.html">Accueil</a></li>
+          <li><a href="about.html">À propos</a></li>
           <li><a href="services.html">Nos services</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
-      <div class="footer-contact">
-        <h3>Contact</h3>
-        <p><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</p>
-     <a href="https://facebook.com/61585777095809">
-          <i class="fa-brands fa-facebook"></i></a>
-          <a href="https://www.instagram.com/dirnex.sarl/"><i class="fa-brands fa-instagram">
-          </i></a>
-          <a href="https://wa.me/243846066283"><i class="fa-brands fa-whatsapp"></i></a>
-          
-          <a href="mailto:lamus0189@gmail.com"><i class="fa-brands fa-envelope"></i></a>
-          <a href="tel:+243846066283"><i class="fa-solid fa-phone"></i></a>
+
+      <div>
+        <h4>Service client</h4>
+        <ul>
+          <li><a href="services client.html">Centre d’aide</a></li>
+          <li><a href="contact.html">Demander un devis</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</li>
+          <li><i class="fa-solid fa-phone"></i> Sur demande</li>
+          <li><i class="fa-solid fa-envelope"></i> Via formulaire</li>
+        </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      &copy; 2025 DIRNEX | Tous droits réservés
-    </div>
+    <div class="footer-bottom">&copy; 2026 DIRNEX | Tous droits réservés</div>
   </footer>
 
+  <script src="index.js"></script>
 </body>
 </html>

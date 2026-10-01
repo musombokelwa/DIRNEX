@@ -3,149 +3,276 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Nos Services</title>
+  <title>Nos services | DIRNEX</title>
+  <meta name="description" content="Découvrez les services DIRNEX en construction, rénovation, électricité, plomberie et supervision de chantier à Lubumbashi, en RDC.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DIRNEX">
+  <meta name="canonical" content="https://dirnex.co/services.html">
+  <meta property="og:title" content="Nos services | DIRNEX">
+  <meta property="og:description" content="Construction, rénovation, électricité et plomberie : solutions complètes pour vos projets en RDC.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dirnex.co/services.html">
   <link rel="icon" href="dirnex.JPG" type="image/x-icon">
+  <link rel="canonical" href="https://dirnex.co/services.html">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <style>
-    * {
-  user-select: none;
-}
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: aliceblue;
-      color: #333;
-    }
-
-    header {
-      background: url('https://images.unsplash.com/photo-1581092795360-3c54b1cbe73f?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
-      color: rgb(0, 0, 0);
-      text-align: center;
-      padding: 4rem 1rem;
-      background-attachment: fixed;
-    }
-
-    header h1 {
-      font-size: 2.8rem;
-      margin-bottom: 0.5rem;
-      text-shadow: 2px 2px 6px rgba(0,0,0,0.5);
-    }
-
-    header p {
-      font-size: 1.2rem;
-      font-weight: 300;
-      text-shadow: 1px 1px 5px rgba(0,0,0,0.6);
-    }
-
-    .services-section {
-      padding: 3rem 10%;
-    }
-
-    .services-section h2 {
-      text-align: center;
-      font-size: 2.2rem;
-      color: #c0392b;
-      margin-bottom: 2rem;
-    }
-
-    .services-container {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 2rem;
-    }
-
-    .service-box {
-      background: white;
-      border-radius: 15px;
-      padding: 2rem;
-      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      text-align: center;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .service-box:hover {
-      transform: translateY(-8px);
-      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
-    }
-
-    .service-box i {
-      font-size: 3rem;
-      color: #c0392b;
-      margin-bottom: 1rem;
-    }
-
-    .service-box h3 {
-      color: #2c3e50;
-      margin-bottom: 1rem;
-    }
-
-    .service-box p {
-      font-size: 0.95rem;
-      line-height: 1.6;
-      color: #555;
-    }
-
-    footer {
-      text-align: center;
-      background-color: #2c3e50;
-      color: white;
-      padding: 1rem 0;
-      margin-top: 3rem;
-    }
-
-  </style>
+  <link rel="stylesheet" href="index.css">
 </head>
 <body>
+  <header class="site-header">
+    <div class="topbar container">
+      <a href="index.html" class="brand" aria-label="Accueil DIRNEX">
+        <img src="dirnex.JPG" alt="Logo DIRNEX">
+        <span>DIRNEX</span>
+      </a>
 
-  <header>
-    <h1>Nos Services</h1>
-    <p>Des solutions de construction fiables, modernes et durables</p>
+      <div class="hamburger" id="hamburger" aria-label="Ouvrir le menu" role="button" tabindex="0">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+
+      <nav id="menu" class="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html" class="active">Nos services</a>
+        <a href="services client.html">Service client</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary header-cta">Demander un devis</a>
+    </div>
   </header>
 
-  <section class="services-section">
-    <h2>Ce que nous faisons</h2>
-    <div class="services-container">
-      <div class="service-box">
-        <i class="fa-solid fa-building"></i>
-        <h3>Construction de Bâtiments</h3>
-        <p>Nous réalisons des bâtiments résidentiels, commerciaux et industriels avec des matériaux de qualité et une équipe expérimentée.</p>
+  <main>
+    <section class="page-hero">
+      <div class="container">
+        <span class="eyebrow">Nos services</span>
+        <h1>Des solutions complètes pour transformer vos projets.</h1>
+        <p>DIRNEX accompagne les particuliers et les entreprises dans la construction, la rénovation et les services techniques avec des prestations de qualité.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="section-title center">
+          <span class="eyebrow accent">Ce que nous faisons</span>
+          <h2>Une expertise complète au service de vos projets.</h2>
+        </div>
+
+        <div class="service-grid">
+          <article class="service-card">
+            <i class="fa-solid fa-building"></i>
+            <h3>Construction de bâtiments</h3>
+            <p>Construction résidentielle et commerciale avec des standards de qualité, sécurité et performance.</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-drafting-compass"></i>
+            <h3>Architecture & planification</h3>
+            <p>Étude, conception et mise en cohérence des plans pour des projets optimisés et réalisables.</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-hard-hat"></i>
+            <h3>Génie civil</h3>
+            <p>Travaux de fondations, structures et infrastructures avec contrôle rigoureux de la qualité.</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-paint-roller"></i>
+            <h3>Rénovation & finitions</h3>
+            <p>Modernisation et mise à niveau des espaces pour améliorer le confort, l’esthétique et la valeur.</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-bolt"></i>
+            <h3>Électricité</h3>
+            <p>Installation, mise aux normes et maintenance des circuits électriques pour un usage performant et sûr.</p>
+          </article>
+
+          <article class="service-card">
+            <i class="fa-solid fa-faucet"></i>
+            <h3>Plomberie</h3>
+            <p>Installation et entretien des réseaux d’eau, de drainage et de chauffage pour un confort durable.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section alt-bg">
+      <div class="container">
+        <div class="section-title center">
+          <span class="eyebrow accent">Notre méthode</span>
+          <h2>Des prestations expliquées image par image.</h2>
+        </div>
+
+        <div class="service-showcase">
+          <article class="service-feature">
+            <div class="service-media">
+              <img src="exteri.jpg" alt="Construction de bâtiment DIRNEX">
+            </div>
+            <div class="service-copy">
+              <span class="eyebrow accent">01</span>
+              <h3>Construction de bâtiment</h3>
+              <p>Nous réalisons des ouvrages solides, durables et conformes aux exigences de nos clients, de la préparation du terrain à la livraison finale.</p>
+              <ul class="service-points">
+                <li>Étude de faisabilité et préparation du chantier</li>
+                <li>Suivi de la construction et contrôle qualité</li>
+                <li>Livraison conforme aux délais et standards</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-feature reverse">
+            <div class="service-media">
+              <img src="1.jpg" alt="Architecture et planification DIRNEX">
+            </div>
+            <div class="service-copy">
+              <span class="eyebrow accent">02</span>
+              <h3>Architecture &amp; planification</h3>
+              <p>Chaque projet commence par une bonne planification. Nous organisons la conception, les dimensions et la logique d’aménagement pour sécuriser la réussite du chantier.</p>
+              <ul class="service-points">
+                <li>Conception et optimisation des espaces</li>
+                <li>Plans adaptés au budget et aux besoins</li>
+                <li>Coordination avec les étapes de réalisation</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-feature">
+            <div class="service-media">
+              <img src="2.jpg" alt="Travaux de génie civil DIRNEX">
+            </div>
+            <div class="service-copy">
+              <span class="eyebrow accent">03</span>
+              <h3>Génie civil</h3>
+              <p>Les fondations, les structures et les infrastructures constituent la base de tout projet durable. Nous les mettons en œuvre avec rigueur et précision.</p>
+              <ul class="service-points">
+                <li>Fondations et terrassements</li>
+                <li>Structures et renforcement</li>
+                <li>Travaux d’infrastructure fiables</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-feature reverse">
+            <div class="service-media">
+              <img src="finition.jpg" alt="Rénovation et finitions DIRNEX">
+            </div>
+            <div class="service-copy">
+              <span class="eyebrow accent">04</span>
+              <h3>Rénovation &amp; finitions</h3>
+              <p>Nous redonnons vie à vos espaces en modernisant les intérieurs et les extérieurs avec des finitions soignées, fonctionnelles et élégantes.</p>
+              <ul class="service-points">
+                <li>Rénovation intérieure et extérieure</li>
+                <li>Finitions et isolation performantes</li>
+                <li>Amélioration du confort et de la valeur</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-feature">
+            <div class="service-media">
+              <img src="electricite.jpg" alt="Installation électrique DIRNEX">
+            </div>
+            <div class="service-copy">
+              <span class="eyebrow accent">05</span>
+              <h3>Électricité</h3>
+              <p>Nos installations électriques sont pensées pour assurer sécurité, autonomie et performance, que ce soit pour un habitat, un local ou une structure commerciale.</p>
+              <ul class="service-points">
+                <li>Installation de réseaux et tableaux électriques</li>
+                <li>Diagnostic, maintenance et mise aux normes</li>
+                <li>Solutions adaptées à chaque usage</li>
+              </ul>
+            </div>
+          </article>
+
+          <article class="service-feature reverse">
+            <div class="service-media">
+              <img src="plomberie.jpg" alt="Travaux de plomberie DIRNEX">
+            </div>
+            <div class="service-copy">
+              <span class="eyebrow accent">06</span>
+              <h3>Plomberie</h3>
+              <p>Nous installons et entretenons les réseaux d’eau, de drainage et de chauffage pour garantir un confort durable et une efficacité optimale au quotidien.</p>
+              <ul class="service-points">
+                <li>Pose et remplacement de conduits et équipements</li>
+                <li>Réparations rapides et durables</li>
+                <li>Confort, sécurité et performance</li>
+              </ul>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container reasons-grid">
+        <div>
+          <span class="eyebrow accent">Pourquoi nous choisir ?</span>
+          <h2>Un partenaire fiable pour des projets durables.</h2>
+          <ul class="check-list">
+            <li>Suivi personnalisé de chaque étape du projet.</li>
+            <li>Qualité de réalisation, sécurité et respect des délais.</li>
+            <li>Solutions adaptables aux besoins spécifiques de chaque client.</li>
+            <li>Approche pratique, professionnelle et orientée résultats.</li>
+          </ul>
+        </div>
+
+        <div class="stats-panel">
+          <div class="stat-box">
+            <strong>+5 ans</strong>
+            <span>d’expérience</span>
+          </div>
+          <div class="stat-box">
+            <strong>100%</strong>
+            <span>orienté client</span>
+          </div>
+          <div class="stat-box">
+            <strong>Sur mesure</strong>
+            <span>solutions adaptées</span>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3><span>D</span>IRNEX</h3>
+        <p>Des solutions fiables et durables pour la construction, la rénovation et les services techniques.</p>
       </div>
 
-      <div class="service-box">
-        <i class="fa-solid fa-drafting-compass"></i>
-        <h3>Architecture & Design</h3>
-        <p>Conception de plans modernes et esthétiques respectant les normes de sécurité et les besoins de nos clients.</p>
+      <div>
+        <h4>Entreprise</h4>
+        <ul>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Nos services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </div>
 
-      <div class="service-box">
-        <i class="fa-solid fa-hard-hat"></i>
-        <h3>Génie Civil</h3>
-        <p>Réalisation de routes, ponts, fondations et ouvrages publics selon les standards de qualité et de durabilité.</p>
+      <div>
+        <h4>Service client</h4>
+        <ul>
+          <li><a href="services client.html">Centre d’aide</a></li>
+          <li><a href="contact.html">Demander un devis</a></li>
+        </ul>
       </div>
 
-      <div class="service-box">
-        <i class="fa-solid fa-paint-roller"></i>
-        <h3>Rénovation & Finition</h3>
-        <p>Remise à neuf de bâtiments anciens, peinture, carrelage et finitions intérieures pour un rendu professionnel.</p>
-      </div>
-
-      <div class="service-box">
-        <i class="fa-solid fa-plug"></i>
-        <h3>Électricité & Plomberie</h3>
-        <p>Installation domotique, systèmes de plomberie, entretien et maintenance des équipements techniques.</p>
-      </div>
-
-      <div class="service-box">
-        <i class="fa-solid fa-helmet-safety"></i>
-        <h3>Suivi & Supervision de Chantier</h3>
-        <p>Contrôle qualité, respect des délais et suivi rigoureux pour garantir le succès de vos projets.</p>
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</li>
+          <li><i class="fa-solid fa-phone"></i> Sur demande</li>
+          <li><i class="fa-solid fa-envelope"></i> Via formulaire</li>
+        </ul>
       </div>
     </div>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 DIRNEX  |  Tous droits réservés</p>
+    <div class="footer-bottom">&copy; 2026 DIRNEX | Tous droits réservés</div>
   </footer>
 
+  <script src="index.js"></script>
 </body>
 </html>

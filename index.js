@@ -1,23 +1,34 @@
 document.addEventListener("DOMContentLoaded", () => {
+  const cards = document.querySelectorAll(".card, .about-card, .bio-card, .service-card");
 
-  // Animation cartes au scroll
-  const cards = document.querySelectorAll(".card, .about-card, .bio-card");
-  const observer = new IntersectionObserver((entries) => {
-    entries.forEach(entry => {
-      if(entry.isIntersecting){
-        entry.target.classList.add("show");
-        observer.unobserve(entry.target);
-      }
-    });
-  }, { threshold: 0.1 });
-  cards.forEach(card => observer.observe(card));
+  if ("IntersectionObserver" in window) {
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("show");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
 
-  // Hamburger menu
+    cards.forEach((card) => observer.observe(card));
+  }
+
   const hamburger = document.getElementById("hamburger");
   const menu = document.getElementById("menu");
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("open");
-    menu.classList.toggle("active");
-  });
 
+  if (hamburger && menu) {
+    const toggleMenu = () => {
+      hamburger.classList.toggle("open");
+      menu.classList.toggle("active");
+    };
+
+    hamburger.addEventListener("click", toggleMenu);
+    hamburger.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" || event.key === " ") {
+        event.preventDefault();
+        toggleMenu();
+      }
+    });
+  }
 });

@@ -3,150 +3,136 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact notre services client</title>
-  <link rel="stylesheet" href="style.css">
+  <title>Service client | DIRNEX</title>
+  <meta name="description" content="Service client DIRNEX : assistance, conseil et prise en charge des demandes, questions et devis pour vos projets en RDC.">
+  <meta name="robots" content="index, follow">
+  <meta name="author" content="DIRNEX">
+  <meta name="canonical" content="https://dirnex.co/services%20client.html">
+  <meta property="og:title" content="Service client | DIRNEX">
+  <meta property="og:description" content="Obtenez de l’aide, des conseils et un devis rapide auprès de DIRNEX pour tous vos projets.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dirnex.co/services%20client.html">
   <link rel="icon" href="dirnex.JPG" type="image/x-icon">
+  <link rel="canonical" href="https://dirnex.co/services%20client.html">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
 </head>
-<style>
-   * {
-  user-select: none;
-}
-body {
-  margin: 0;
-  font-family: "Poppins", sans-serif;
-  background-color: #f9f9f9;
-}
-h1{
-  margin-bottom: 15px;
-  color: #000000;
-  font-size: 1.9rem;
-  align-items: center;
-  align-content: center;
-  text-align: center;
-  justify-content: center;
-}
-
-/* Footer */
-.footer {
-  background-color: #ffffff;
-  color: #130000;
-  padding: 50px 20px;
-}
-
-.footer-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 40px;
-  max-width: 1100px;
-  margin: 0 auto;
-}
-
-.footer h3 {
-  margin-bottom: 15px;
-  color: #f39c12;
-}
-
-.footer-about p {
-  color: #000000;
-}
-
-/* Contact form */
-.contact-form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-}
-
-.contact-form input,
-.contact-form textarea {
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 8px;
-  background: #c5bebe;
-  color: #000000;
-  font-size: 14px;
-}
-
-.contact-form textarea {
-  resize: vertical;
-  height:300px;
-  width: 100%;
-  padding: 12px;
-  border: none;
-  border-radius: 5px;
-  margin-bottom: 15px;
-  resize: none;
-}
-
-.contact-form button {
-  background-color: #f39c12;
-  color: white;
-  border: none;
-  padding: 12px;
-  border-radius: 8px;
-  cursor: pointer;
-  transition:0.3s ease;
-}
-
-.contact-form button:hover {
-  background-color: #d35400;
-}
-
-/* Informations */
-.footer-info ul {
-  list-style: none;
-  padding: 0;
-}
-
-.footer-info li {
-  margin-bottom: 10px;
-  color: #000000;
-}
-
-/* Bas du footer */
-.footer-bottom {
-  text-align: center;
-  margin-top: 40px;
-  border-top: 1px solid #000000;
-  padding-top: 15px;
-  color: #000000;
-  font-size: 14px;
-}
-
-</style>
 <body>
+  <header class="site-header">
+    <div class="topbar container">
+      <a href="index.html" class="brand" aria-label="Accueil DIRNEX">
+        <img src="dirnex.JPG" alt="Logo DIRNEX">
+        <span>DIRNEX</span>
+      </a>
 
-  <footer class="footer">
-    <div class="footer-container">
-      <div class="footer-about">
-        <h1>BIENVENUE</h1>
-        <p>pour toute question contacter notre service client</p>
+      <div class="hamburger" id="hamburger" aria-label="Ouvrir le menu" role="button" tabindex="0">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
       </div>
 
-      <div class="footer-contact">
-        <h3>Services client</h3>
-        <form action="contact.php" method="POST" class="contact-form">
-          <input type="text" name="nom" placeholder="Votre nom complet" required>
-          <input type="email" name="email" placeholder="Votre adresse e-mail" required>
-          <textarea name="message" placeholder="Votre message..." required></textarea>
-          <button type="submit">Envoyer</button>
-        </form>
+      <nav id="menu" class="site-nav">
+        <a href="index.html">Accueil</a>
+        <a href="about.html">À propos</a>
+        <a href="services.html">Nos services</a>
+        <a href="services client.html" class="active">Service client</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <a href="contact.html" class="btn btn-primary header-cta">Demander un devis</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-hero small-hero">
+      <div class="container">
+        <span class="eyebrow">Service client</span>
+        <h1>Nous sommes à votre écoute.</h1>
+        <p>Pour toute question, demande de devis ou besoin d’assistance, notre équipe est disponible pour vous accompagner.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container contact-layout">
+        <div class="contact-info-panel">
+          <span class="eyebrow accent">Besoin d’aide ?</span>
+          <h2>Contactez notre équipe pour obtenir des informations claires et rapides.</h2>
+          <p>Que vous souhaitiez demander un devis, poser une question sur un service ou obtenir un conseil sur votre projet, nous vous répondons avec sérieux et réactivité.</p>
+
+          <div class="contact-details">
+            <div class="detail-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Lubumbashi, RDC</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-headset"></i>
+              <span>Réponse rapide via formulaire</span>
+            </div>
+            <div class="detail-item">
+              <i class="fa-solid fa-shield-heart"></i>
+              <span>Confidentialité respectée</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-panel">
+          <h2>Écrivez-nous</h2>
+          <form action="contact.php" method="POST" class="contact-form-standard">
+            <div class="form-group">
+              <label for="nom">Nom complet</label>
+              <input id="nom" type="text" name="nom" placeholder="Votre nom complet" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Adresse e-mail</label>
+              <input id="email" type="email" name="email" placeholder="Votre adresse e-mail" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Votre message</label>
+              <textarea id="message" name="message" placeholder="Décrivez votre demande..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Envoyer</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <h3><span>D</span>IRNEX</h3>
+        <p>Des solutions fiables et durables pour la construction, la rénovation et les services techniques.</p>
       </div>
 
-      <div class="footer-info">
-        <h3>Informations</h3>
+      <div>
+        <h4>Entreprise</h4>
         <ul>
-          <li><i class="fa-solid fa-location-dot"></i> lubumbashi, RDC</li>
-          <li><i class="fa-solid fa-phone"></i> +243 846066283</li>
-          <li><i class="fa-solid fa-envelope"></i> musjosue809@gmail.com</li>
+          <li><a href="about.html">À propos</a></li>
+          <li><a href="services.html">Nos services</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Service client</h4>
+        <ul>
+          <li><a href="services client.html">Centre d’aide</a></li>
+          <li><a href="contact.html">Demander un devis</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <ul class="contact-list">
+          <li><i class="fa-solid fa-location-dot"></i> Lubumbashi, RDC</li>
+          <li><i class="fa-solid fa-headset"></i> Via formulaire</li>
+          <li><i class="fa-solid fa-lock"></i> Informations limitées</li>
         </ul>
       </div>
     </div>
-    <div class="footer-bottom">
-      <p>&copy; 2026 DIRNIX | Tous droits réservés</p>
-    </div>
+    <div class="footer-bottom">&copy; 2026 DIRNEX | Tous droits réservés</div>
   </footer>
 
+  <script src="index.js"></script>
 </body>
 </html>
